@@ -1,0 +1,46 @@
+[08-Sep-2017 19:28:32 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/practice/something.php on line 19
+[08-Sep-2017 19:28:33 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/practice/something.php on line 19
+[08-Sep-2017 19:28:33 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/practice/something.php on line 19
+[08-Sep-2017 19:29:22 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/practice/something.php on line 19
+[08-Sep-2017 19:29:22 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/practice/something.php on line 19
+[08-Sep-2017 19:29:23 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/practice/something.php on line 19
+[08-Sep-2017 19:29:23 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/practice/something.php on line 19
+[08-Sep-2017 19:29:23 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/practice/something.php on line 19
+[08-Sep-2017 19:29:23 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/practice/something.php on line 19
+[08-Sep-2017 19:29:45 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/practice/something.php on line 19
+[08-Sep-2017 19:29:46 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/practice/something.php on line 19
+[08-Sep-2017 19:30:51 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/practice/something.php on line 19
+[08-Sep-2017 19:30:52 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/practice/something.php on line 19
+[08-Sep-2017 19:30:52 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/practice/something.php on line 19
+[08-Sep-2017 19:30:53 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/practice/something.php on line 19
+[08-Sep-2017 19:31:52 UTC] PHP Parse error:  syntax error, unexpected '");"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/practice/something.php on line 19
+[08-Sep-2017 19:31:53 UTC] PHP Parse error:  syntax error, unexpected '");"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/practice/something.php on line 19
+[08-Sep-2017 19:31:54 UTC] PHP Parse error:  syntax error, unexpected '");"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/practice/something.php on line 19
+[13-Sep-2017 19:15:01 UTC] PHP Parse error:  syntax error, unexpected '%=' (T_MOD_EQUAL) in /home/ubuntu/workspace/practice/php_arrays.php on line 6
+[13-Sep-2017 19:15:31 UTC] PHP Parse error:  syntax error, unexpected '%' in /home/ubuntu/workspace/practice/php_arrays.php on line 6
+[13-Sep-2017 19:15:33 UTC] PHP Parse error:  syntax error, unexpected '%' in /home/ubuntu/workspace/practice/php_arrays.php on line 6
+[13-Sep-2017 19:15:35 UTC] PHP Parse error:  syntax error, unexpected '%' in /home/ubuntu/workspace/practice/php_arrays.php on line 6
+[13-Sep-2017 19:44:23 UTC] PHP Warning:  rand() expects parameter 1 to be long, string given in /home/ubuntu/workspace/practice/php_arrays.php on line 57
+[13-Sep-2017 19:44:23 UTC] PHP Stack trace:
+[13-Sep-2017 19:44:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/practice/php_arrays.php:0
+[13-Sep-2017 19:44:23 UTC] PHP   2. rand() /home/ubuntu/workspace/practice/php_arrays.php:57
+[13-Sep-2017 19:44:51 UTC] PHP Warning:  rand() expects parameter 1 to be long, string given in /home/ubuntu/workspace/practice/php_arrays.php on line 57
+[13-Sep-2017 19:44:51 UTC] PHP Stack trace:
+[13-Sep-2017 19:44:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/practice/php_arrays.php:0
+[13-Sep-2017 19:44:51 UTC] PHP   2. rand() /home/ubuntu/workspace/practice/php_arrays.php:57
+[13-Sep-2017 19:46:08 UTC] PHP Warning:  rand() expects parameter 1 to be long, string given in /home/ubuntu/workspace/practice/php_arrays.php on line 57
+[13-Sep-2017 19:46:08 UTC] PHP Stack trace:
+[13-Sep-2017 19:46:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/practice/php_arrays.php:0
+[13-Sep-2017 19:46:08 UTC] PHP   2. rand() /home/ubuntu/workspace/practice/php_arrays.php:57
+[13-Sep-2017 19:46:09 UTC] PHP Warning:  rand() expects parameter 1 to be long, string given in /home/ubuntu/workspace/practice/php_arrays.php on line 57
+[13-Sep-2017 19:46:09 UTC] PHP Stack trace:
+[13-Sep-2017 19:46:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/practice/php_arrays.php:0
+[13-Sep-2017 19:46:09 UTC] PHP   2. rand() /home/ubuntu/workspace/practice/php_arrays.php:57
+[13-Sep-2017 19:46:10 UTC] PHP Warning:  rand() expects parameter 1 to be long, string given in /home/ubuntu/workspace/practice/php_arrays.php on line 57
+[13-Sep-2017 19:46:10 UTC] PHP Stack trace:
+[13-Sep-2017 19:46:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/practice/php_arrays.php:0
+[13-Sep-2017 19:46:10 UTC] PHP   2. rand() /home/ubuntu/workspace/practice/php_arrays.php:57
+[13-Sep-2017 19:51:09 UTC] PHP Warning:  rand() expects parameter 1 to be long, string given in /home/ubuntu/workspace/practice/php_arrays.php on line 57
+[13-Sep-2017 19:51:09 UTC] PHP Stack trace:
+[13-Sep-2017 19:51:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/practice/php_arrays.php:0
+[13-Sep-2017 19:51:09 UTC] PHP   2. rand() /home/ubuntu/workspace/practice/php_arrays.php:57

@@ -1,0 +1,66 @@
+header{
+    font-size:275%;
+}
+
+body{
+    background-color: #d1d1d1;
+}
+
+header, main, nav, footer{
+    text-align: center;
+}
+
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+li {
+    float: left;
+}
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: #111;
+}
+
+#current{
+    background-color: orange;
+}
+
+h1{
+    font-family: 'Bungee', cursive;
+
+}
+
+main, footer{
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+figure{
+    
+    border:8px solid black;
+    padding: 5px;
+}
+
+figure:hover{
+    opacity:0.3;
+}
+
+

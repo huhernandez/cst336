@@ -1,0 +1,35 @@
+    @import url('https://fonts.googleapis.com/css?family=Shojumaru');
+    @import url('https://fonts.googleapis.com/css?family=Gruppo');
+    img {
+        display:block;
+        width:300px;
+        margin:auto;
+        
+    }
+    h3{
+        font-family: 'Gruppo', cursive;
+        text-shadow: 3px 2px red;
+        text-align:center;
+    }
+    
+    h2{
+        font-family: 'Shojumaru', cursive;
+        text-shadow: 3px 2px red;
+        text-align:center;
+    }
+    
+    body {
+        background-color: black;
+        background-image:url("../img/mat.jpg");
+        background-position:center;
+        background-repeat: repeat-y;
+        color: white;
+        
+    }
+    
+    header{
+        font-family: 'Shojumaru', cursive;
+        text-shadow: 5px 5px red;
+        text-align: center;
+        
+    }
