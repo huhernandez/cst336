@@ -1,0 +1,14 @@
+    body{
+
+        width:100%;
+        text-align:center;
+        color:black;
+        background-image: url("https://pixabay.com/get/eb33b7072df1023ed1534705fb0938c9bd22ffd41cb1194095f7c178a6/abstract-2668553_1920.jpg");
+        text-shadow: 0 0 6px #FFFFFF;
+
+        
+    }
+    
+    iframe{
+        background-color: white;
+    }
