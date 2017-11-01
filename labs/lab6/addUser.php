@@ -7,8 +7,8 @@ if (!isset($_SESSION['username'])) { //validates that admin has indeed logged in
     
 }
 
- include("../../dbConnection.php");
- $conn = getDatabaseConnection();
+ include '../../dbConnection.php';
+$conn = getDatabaseConnection();
 
 function getDepartmentInfo(){
     global $conn;        
