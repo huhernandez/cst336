@@ -179,13 +179,13 @@ function getGenre() {
             <div id="images">
             <div class="row">
    
-    <div class="col-sm-3" style="margin-right: 20px;display:inline;">
+    <div class="col-sm-3 img-responsive" style="margin-right: 20px;display:inline;">
       <img src="img/game.png" class="img-responsive img-rounded">
     </div>
-    <div class="col-sm-3" style="margin-right: 20px;display:inline";>
+    <div class="col-sm-3 img-responsive" style="margin-right: 20px;display:inline";>
       <img src="img/pacman.png" class="img-responsive img-rounded">
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-3 img-responsive">
       <img src="img/retro.png" class="img-responsive img-rounded">
     </div>
 
