@@ -17,10 +17,12 @@
             
             
             function between(x, y, z ) {
-              if (x > 50 || x <1 || y > 50 || y <1 || z > 50 || z <1)
-              
-              document.getElementById("range").innerHTML =" <p style='color:red;'>Number must be between 1 & 50.</p>" ;
-              
+              if (x > 50 || x <1 || y > 50 || y <1 || z > 50 || z <1){
+                document.getElementById("range").innerHTML =" <p style='color:red;'>Number must be between 1 & 50.</p>" ;
+                document.getElementById("equal").innerHTML = "";
+                document.getElementById("sorted").innerHTML = "";
+                document.getElementById("varMax").innerHTML = "";
+              }
               
             }
             
@@ -32,19 +34,28 @@
               
             }
             
+            function mySort(x, y, z ) {
+              if (x > 50 || x <1 || y > 50 || y <1 || z > 50 || z <1)
+              
+              document.getElementById("range").innerHTML =" <p style='color:red;'>Number must be between 1 & 50.</p>" ;
+              
+              
+            }
             
-            between(n1, n2, n3);
+            
             equal(n1, n2, n3);
-            xyz.sort();
+            xyz.sort(function(a, b){return a-b});
             
             var inlsort= xyz.toString();
             
-            document.getElementById("sorted").innerHTML ="Sorted Array: " + inlsort;
+            document.getElementById("sorted").innerHTML ="The numbers in ascending order are: " + inlsort;
         
     
             
             
             document.getElementById("varMax").innerHTML = "The biggest number is: " + xyz[2];
+            
+            between(n1, n2, n3);
             
             
             
@@ -83,14 +94,14 @@
             
         </h4>
         
+        <h3 id ="varMax">
+        </h3>
         
-         <h4 id="sorted">
+         <h7 id="sorted">
             
-        </h4>
+        </h7>
         
-        <div id="varMax">
         
-        </div>
     
 
     </body>
