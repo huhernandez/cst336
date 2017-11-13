@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Hanalei+Fill|Sancreek|Amatic+SC|Walter+Turncoat');
+
+#won, #lost {
+    display: none;
+}
+
+#man {
+    margin: 20px auto;
+    width: auto;
+    height:auto;
+    border: solid;
+    border-color: yellow;
+    border-radius: 5px;
+    border-width: 5px;
+}
+
+#word{
+    font-size: 1.8em;
+    font-family: 'Hanalei Fill', cursive !important;
+    color: white !important;
+    text-shadow:0px 0px 9px black;
+}
+
+#won{
+    font-family: 'Sancreek', cursive !important;
+    color: white !important;
+    text-shadow:0px 0px 9px black;
+    font-size: 40px !important;
+    
+}
+
+#lost{
+    font-family: 'Sancreek', cursive !important;
+    color: white !important;
+    text-shadow:0px 0px 9px black;
+    font-size: 40px !important;
+}
+
+body {
+    background-image:url("../img/bkg.png");
+}
+
+.hint{
+    font-size: 0.6em !important;
+    font-family: 'Amatic SC', cursive !important;
+    color: black !important;
+    text-shadow:0px 0px 9px white !important;
+    
+    
+}
+
+.btn{
+    padding: 7px 7px !important;
+    margin: 0px 2px;
+    font-family: 'Hanalei Fill', cursive !important;
+}
+
+.letter{
+    font-family: 'Hanalei Fill', cursive !important;
+    
+}
+h1{
+    font-size: 60px !important;
+    font-family: 'Sancreek', cursive !important;
+    color: white !important;
+    text-shadow:0px 0px 9px black;
+    border: solid;
+    border-color: yellow;
+    /*background-image:url("../img/wood.jpg");*/
+    border-width: auto;
+    border-radius: 5px;
+    border-width: 5px;
+
+}
+
+.replayBtn{
+    font-family: 'Amatic SC', cursive !important;
+}
