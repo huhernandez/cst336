@@ -14,6 +14,10 @@
     border-width: 5px;
 }
 
+#hint{
+    font-family: 'Amatic SC', cursive !important;
+}
+
 #word{
     font-size: 1.8em;
     font-family: 'Hanalei Fill', cursive !important;

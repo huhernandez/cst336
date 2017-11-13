@@ -27,6 +27,12 @@ $("#letters").on("click",".letter", function(){
                 
 });
 
+$("#hint1").on("click",function(){
+    // $("#word").append("<span class='hint'>Hint: " + selectedHint+ "</span>");
+    alert("hint: "+selectedHint);
+});
+    
+
 function pickWord() {
    var randomInt = Math.floor(Math.random() * words.length);
     selectedWord = words[randomInt].word.toUpperCase();
@@ -64,7 +70,7 @@ function updateBoard() {
          document.getElementById("word").innerHTML += letter + " ";
     }
     $("#word").append("<br />");
-    $("#word").append("<span class='hint'>Hint: " + selectedHint+ "</span>")
+    $("#word").append("<span class='hint'> " + " "+ "</span>")
 }
 
 function updateWord(positions, letter){
