@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Spectral+SC');
+    img {
+        display:block;
+        
+        margin:auto;
+        
+    }
+    h1{
+        font-family: 'Spectral SC', serif !important;
+        text-shadow: 3px 2px yellow;
+        text-align:center;
+    }
+    
+    
+    
+    body {
+        font-family: 'Open Sans Condensed', sans-serif !important;
+        background-color: lightgrey !important;
+        
+        background-position:center;
+        background-repeat: repeat-y;
+        text-align:center;
+        
+        
+    }
+    
+   #pair{
+       font-family: 'Open Sans Condensed', sans-serif !important;
+   }
+    
+    #submit{
+        font-family: 'Open Sans Condensed', sans-serif !important;
+    }
+    #bier1 {
+    margin: 20px auto;
+    width: auto;
+    height:auto;
+    border: solid;
+    border-color: yellow;
+    border-radius: 5px;
+    border-width: 5px;
+    margin: 25px;
+    }
+
+    #bier2 {
+    margin: 20px auto;
+    width: auto;
+    height:auto;
+    border: solid;
+    border-color: yellow;
+    border-radius: 5px;
+    border-width: 5px;
+    margin: 25px;
+    }
+    
+    #bier3 {
+    margin: 20px auto;
+    width: auto;
+    height:auto;
+    border: solid;
+    border-color: yellow;
+    border-radius: 5px;
+    border-width: 5px;
+    margin: 25px;
+    }
+    
+    #bier4 {
+    margin: 20px auto;
+    width: auto;
+    height:auto;
+    border: solid;
+    border-color: yellow;
+    border-radius: 5px;
+    border-width: 5px;
+    margin: 25px;
+    }
