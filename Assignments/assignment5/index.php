@@ -1,3 +1,9 @@
+<?php
+
+include 'dbconnection.php';
+    $conn = getDatabaseConnection();
+?>
+
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Spectral+SC" rel="stylesheet">
@@ -13,6 +19,11 @@
     
     ageFunction();
     
+    
+    function showInput() {
+        document.getElementById('display').innerHTML =
+        "you have searched for ABV " +  document.getElementById("abv").value;
+    }
     
    function clearDisp(){
         $("#biers").hide();
@@ -77,12 +88,15 @@
 
         });//ajax
         
+        //
+        
     }  //function
     //getAbv();
     
     $(document).ready(function(){
                     $(".submit").click(function(){
                         getAbv();
+                        showInput();
                     });
                 });
     
@@ -145,6 +159,8 @@
             Description: <span id="descrip4"></span><br><br>
             </div>
     </div>
+    
+    <div id="display"></div>
             
             
         
