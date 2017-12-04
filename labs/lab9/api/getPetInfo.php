@@ -1,6 +1,6 @@
 <?php
 
-    include '../../../dbConnection.php';
+    include '../../../dbConnection2.php';
     $dbConn = getDatabaseConnection("c9");    
     $sql = "SELECT *, YEAR(CURDATE()) - yob age 
             FROM adoptees 
