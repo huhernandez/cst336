@@ -38,68 +38,7 @@ include 'dbconnection.php';
     
 }
 
-    function getAbv() {
-        // alert("ok");
         
-        //alert($("#zip").val());
-        $.ajax({
-
-            type: "GET",
-            url: "https://api.punkapi.com/v2/beers",
-            dataType: "json",
-            data: { 
-                "abv_lt": $("#abv").val(),
-                "food": $("#pair").val(),
-                
-                "per_page": 7
-                
-            },
-            success: function(data,status) {
-              
-            // alert(data[1]["name"]);
-            // alert(data[1]["name"]);
-            console.log(data);
-            
-            $("#beerName").html(data[1]["name"]);
-            $("#ab").html(data[1]["abv"]);
-            $("#descrip").html(data[1]["description"]);
-            document.getElementById("b1").src= data[1]["image_url"];
-            
-            $("#beerName2").html(data[2]["name"]);
-            $("#ab2").html(data[2]["abv"]);
-            $("#descrip2").html(data[2]["description"]);
-            document.getElementById("b2").src= data[2]["image_url"];
-            
-            $("#beerName3").html(data[3]["name"]);
-            $("#ab3").html(data[3]["abv"]);
-            $("#descrip3").html(data[3]["description"]);
-            document.getElementById("b3").src= data[3]["image_url"];
-            
-            $("#beerName4").html(data[4]["name"]);
-            $("#ab4").html(data[4]["abv"]);
-            $("#descrip4").html(data[4]["description"]);
-            document.getElementById("b4").src= data[4]["image_url"];
-            //$("#long").html(data.longitude);
-            
-            },
-            complete: function(data,status) { //optional, used for debugging purposes
-            // alert(status);
-            }
-
-        });//ajax
-        
-        //
-        
-    }  //function
-    //getAbv();
-    
-    $(document).ready(function(){
-                    $(".submit").click(function(){
-                        getAbv();
-                        showInput();
-                    });
-                });
-    
 </script>
 
 </head>

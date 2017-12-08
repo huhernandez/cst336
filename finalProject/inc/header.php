@@ -42,11 +42,20 @@
   
                   <p class="navbar-text navbar-left"> <a href="index.php" class="navbar-link">Home</a></p>
                   <p class="navbar-text navbar-left"> <a href="loginPage.php" class="navbar-link">Admin Login</a></p>
-                  <p class="navbar-text navbar-left"> <a href="#" class="navbar-link">Your Cart  &nbsp;&nbsp;&nbsp; <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></p>
+                 
   
               </div>
             </nav>
         <div class="jumbotron">
 
-            <img class ="img-responsive" src= "logo.png"   />
             <h2></h2>
+                <div class="row text-center">
+   
+        
+    
+    
+      <img src="img/inferno.png" id="gameinferno" class=class="img-responsive center-block">
+    
+
+  </div>
+            <p>It's lit!</p>

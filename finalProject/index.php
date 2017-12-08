@@ -68,16 +68,16 @@
         // }
         
         
-        echo "if bruh";
+        
          
     }//endIf (isset)
     
     else {
-        echo "else bruh";
+        
         $sql .= " ORDER BY game_name ASC";
     }
     
-    echo $sql;
+    
        
         $stmt = $conn->prepare($sql);
         $stmt->execute($namedParameters);
@@ -90,9 +90,9 @@
          foreach($items as $item) {
             echo $item['game_id']." ".$item['game_name'] . " " . $item['console_name']."<br>Genre: ".$item['genre'] . "<br>Release: " . $item['game_release']."</a><br>";
             
-            echo "<form action='addtocart.php' style='display:inline'>";
-            echo "<input type='hidden' name='itemId' value='".$item['game_id']."'>";
-            echo '<button class="add" value="'.$item['game_name'].'"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> &nbsp;&nbsp;&nbsp;Add to cart</button>';
+            // echo "<form action='addtocart.php' style='display:inline'>";
+            // echo "<input type='hidden' name='itemId' value='".$item['game_id']."'>";
+            // echo '<button class="add" value="'.$item['game_name'].'"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> &nbsp;&nbsp;&nbsp;Add to cart</button>';
           
             echo "<br />";
         }
@@ -103,9 +103,9 @@
         foreach($items as $item) {
             echo "<tr><td><a href='viewitem.php?itemId=".$item['game_id']."'>".$item['game_name'] . "</a></td>" . "<td>".$item['console_name'] . "</td><td>$" . $item['price']."";
             
-            echo "</td><td><form action='addtocart.php' style='display:inline'>";
-            echo "<input type='hidden' name='itemId' value='".$item['game_id']."'>";
-            echo '<button class="btn btn-info btn-sm" value="'.$item['game_name'].'"><span class="glyphicon glyphicon-ok-sign"></span>  &nbsp;&nbsp;&nbsp;Add to cart</button>';
+            // echo "</td><td><form action='addtocart.php' style='display:inline'>";
+            // echo "<input type='hidden' name='itemId' value='".$item['game_id']."'>";
+            // echo '<button class="btn btn-info btn-sm" value="'.$item['game_name'].'"><span class="glyphicon glyphicon-ok-sign"></span>  &nbsp;&nbsp;&nbsp;Add to cart</button>';
             echo "</form>";
             echo "</td></tr>";
         }
@@ -150,28 +150,58 @@ function getGenre() {
         $_SESSION['ids']=array();
     }
 ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
 
+        function randomIntFromInterval(min, max) {
+             return Math.floor(Math.random() * (max - min + 1) + min);
+        };
+
+// A more specific number between 0 and the number of poke on database
+        function randPokemon() {
+          return randomIntFromInterval(1, 718).toString();
+        }
+
+// Fetch a random pokemon name
+        function generateName() {
+          var generateurl = "https://pokeapi.co/api/v2/pokemon/" + randPokemon();
+        
+          $.ajax({
+            type: "GET",
+            url: generateurl,
+            // Set the data to fetch as jsonp to avoid same-origin policy
+            dataType: "json",
+            success: function(data) {
+              // If the ajax call is successfull, add the name to the "name" span
+              console.log(data.name);
+              console.log(data.image);
+              
+              $("#pokeName").html(data.name);
+              document.getElementById("b1").src= data.sprites.front_default;
+              //var href = "http://pokeapi.co" + data.image;
+            }
+          });
+        }
+    //getAbv();
+    
+    $(document).ready(function(){
+                   
+                        generateName();
+                   
+                });
+                
+                
+                
+
+    
+</script>
 
             
-            <div class="row text-center">
-   
-    <div class="col-sm-3">
-      <img src="img/game.png" class="img-responsive img-rounded">
-    </div>
-    <div class="col-sm-3">
-      <img src="img/pacman.png" class="img-responsive img-rounded">
-    </div>
-    <div class="col-sm-3">
-      <img src="img/retro.png" class="img-responsive img-rounded">
-    </div>
 
-  </div>
-             
-                    
-               
+             <img id= "b1" height="150"><br>
+
+            <span id="pokeName"></span> will be helping you today!!!<br>
             
-            <h1>Retro Video Game Catalog</h1>
-            <p>Search through our fine collection of retro games.</p>
 
         </div>
         
@@ -179,15 +209,7 @@ function getGenre() {
        
         <hr>
         <h3>Game Stock</h3>
-        <form action="viewcart.php" style='display:inline' method="get">
-            
-            <button type="submit" value="Display Shopping Cart"  >
-                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> &nbsp;&nbsp;&nbsp; Your Shopping cart
-                </button>
-            
-            
-               
-        </form>
+        
         
         <form method="get">
              Game Name: <input type="text" name="gameName" placeholder="Game Name"/>
