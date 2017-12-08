@@ -118,7 +118,7 @@ function displayCount(){
     </head>
     <body>
 
-        <h1> GamesGalore Admin Page </h1>
+        
         <h2> Welcome <?=$_SESSION['adminFullName']?>! </h2>
         
         <hr>
